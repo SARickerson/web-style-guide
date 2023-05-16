@@ -21,11 +21,11 @@
   }
   
   .theme.col-1 {
-    background-color: #927bc1;
+    background-color: $purple;
   }
   
   .theme.col-2 {
-    background-color: #fd7856;
+    background-color: $orange;
   }
   
   .theme.col-3 {
@@ -53,15 +53,15 @@
   }
   
   .theme.col-9 {
-    background-color: #e4757a;
+    background-color: $light-red;
   }
   
   .theme.col-10 {
-    background-color: #63cc82;
+    background-color: $medium-green;
   }
   
   .theme.col-11 {
-    background-color: #51ddfc;
+    background-color: $light-blue;
   }
   
   .theme.col-12 {
@@ -72,7 +72,7 @@
     flex-basis: 100%;
   }
 
-  @media (min-width: 768px) { 
+  @media (min-width: $breakpoint) { 
     .container {
       max-width: 1400px;
       display: block;

@@ -2,3 +2,18 @@
 //  Variables
 //========================================
 
+// Colors
+$light-green:#58e1c1;
+$white: #fff;
+$light-blue: #51ddfc;
+$orange: #fd7856;
+$purple: #927bc1;
+$light-red: #e4757a;
+$medium-green: #63cc82;
+
+$light-blue-light: lighten($light-blue, 15%);
+
+
+
+//Breakpoint
+$breakpoint: 768px;

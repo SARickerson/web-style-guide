@@ -353,8 +353,7 @@ a {
   display: flex;
   flex-direction: column;
 }
-
-.nav-link {
+.nav .nav-link {
   text-align: center;
   border-radius: 5px;
   padding: 10px 0;
@@ -362,12 +361,21 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
-.nav-link:hover {
+.nav .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
 }
 
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-link {
+    flex-basis: 100px;
+  }
+}
 .container {
   padding: 0 10px;
 }
@@ -438,6 +446,67 @@ a {
   flex-basis: 100%;
 }
 
+@media (min-width: 768px) {
+  .container {
+    max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .centered {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .row {
+    flex-direction: row;
+  }
+  [class^=col] {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    align-items: center;
+  }
+  [class^=col] + [class^=col] {
+    margin-left: 10px;
+  }
+  .col-1 {
+    flex-basis: 8.33%;
+  }
+  .col-2 {
+    flex-basis: 16.67%;
+  }
+  .col-3 {
+    flex-basis: 25%;
+  }
+  .col-4 {
+    flex-basis: 33.33%;
+  }
+  .col-5 {
+    flex-basis: 41.67%;
+  }
+  .col-6 {
+    flex-basis: 50%;
+  }
+  .col-7 {
+    flex-basis: 58.33%;
+  }
+  .col-8 {
+    flex-basis: 66.67%;
+  }
+  .col-9 {
+    flex-basis: 75%;
+  }
+  .col-10 {
+    flex-basis: 83.33%;
+  }
+  .col-11 {
+    flex-basis: 91.67%;
+  }
+  .col-12 {
+    flex-basis: 100%;
+  }
+}
 .form {
   flex-basis: 100%;
 }
@@ -472,6 +541,11 @@ a {
 
 .default {
   background-color: #51ddfc;
+  transition-duration: 1s;
+}
+
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .error {
@@ -490,6 +564,14 @@ a {
   background-color: #fd7856;
 }
 
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
 .img-avatar {
   display: block;
   margin-left: auto;
@@ -513,4 +595,11 @@ a {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-width: 768px) {
+  .logo {
+    margin-left: initial;
+    margin-right: initial;
+  }
 }/*# sourceMappingURL=styles.css.map */
